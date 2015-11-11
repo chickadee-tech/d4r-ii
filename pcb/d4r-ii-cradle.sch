@@ -1,0 +1,208 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ckd_sandwich
+LIBS:ti-gate
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7050 7000 0    197  ~ 0
+d4r-ii-cradle
+$Sheet
+S 9300 2050 1200 3400
+U 564009DE
+F0 "ExpansionPort" 60
+F1 "ExpansionPort.sch" 60
+F2 "+5V" I L 9300 3800 60 
+F3 "GND" I R 10500 3800 60 
+F4 "TIM1" I L 9300 2200 60 
+F5 "UART1_TX" I L 9300 5300 60 
+F6 "UART1_RX" I L 9300 5400 60 
+$EndSheet
+$Comp
+L CONN_02X06 P1
+U 1 1 56429CDE
+P 4450 3800
+F 0 "P1" H 4450 4150 50  0000 C CNN
+F 1 "CONN_02X06" H 4450 3450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x06" H 4450 2600 60  0001 C CNN
+F 3 "" H 4450 2600 60  0000 C CNN
+	1    4450 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4050 4200 4200
+Wire Wire Line
+	4200 4200 4700 4200
+Wire Wire Line
+	4700 4200 4700 4050
+Wire Wire Line
+	4200 3850 4200 3750
+Wire Wire Line
+	4200 3750 4000 3750
+Wire Wire Line
+	4700 3850 4700 3750
+Wire Wire Line
+	4700 3750 4900 3750
+$Comp
+L GNDPWR #PWR01
+U 1 1 56429E21
+P 4900 3750
+F 0 "#PWR01" H 4900 3550 50  0001 C CNN
+F 1 "GNDPWR" H 4900 3620 50  0000 C CNN
+F 2 "" H 4900 3700 60  0000 C CNN
+F 3 "" H 4900 3700 60  0000 C CNN
+	1    4900 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR02
+U 1 1 56429E65
+P 4000 3750
+F 0 "#PWR02" H 4000 3550 50  0001 C CNN
+F 1 "GNDPWR" H 4000 3620 50  0000 C CNN
+F 2 "" H 4000 3700 60  0000 C CNN
+F 3 "" H 4000 3700 60  0000 C CNN
+	1    4000 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3950 5150 3950
+Wire Wire Line
+	5150 3950 5150 3400
+Wire Wire Line
+	4200 3950 3800 3950
+Wire Wire Line
+	3800 3950 3800 3400
+Wire Wire Line
+	4200 3650 3800 3650
+Connection ~ 3800 3650
+Wire Wire Line
+	4700 3650 5150 3650
+Connection ~ 5150 3650
+$Comp
+L +5V #PWR03
+U 1 1 56429F1E
+P 5150 3400
+F 0 "#PWR03" H 5150 3250 50  0001 C CNN
+F 1 "+5V" H 5150 3540 50  0000 C CNN
+F 2 "" H 5150 3400 60  0000 C CNN
+F 3 "" H 5150 3400 60  0000 C CNN
+	1    5150 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR04
+U 1 1 56429F62
+P 3800 3400
+F 0 "#PWR04" H 3800 3250 50  0001 C CNN
+F 1 "+5V" H 3800 3540 50  0000 C CNN
+F 2 "" H 3800 3400 60  0000 C CNN
+F 3 "" H 3800 3400 60  0000 C CNN
+	1    3800 3400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4700 3550
+Wire Wire Line
+	4200 3550 4050 3550
+Wire Wire Line
+	4050 3550 4050 3450
+Text Label 4050 3450 0    60   ~ 0
+TIM1
+Text Label 9100 2200 2    60   ~ 0
+TIM1
+Wire Wire Line
+	9300 2200 9100 2200
+Wire Wire Line
+	9300 3800 9050 3800
+Wire Wire Line
+	9050 3800 9050 3600
+$Comp
+L +5V #PWR05
+U 1 1 5642A1A7
+P 9050 3600
+F 0 "#PWR05" H 9050 3450 50  0001 C CNN
+F 1 "+5V" H 9050 3740 50  0000 C CNN
+F 2 "" H 9050 3600 60  0000 C CNN
+F 3 "" H 9050 3600 60  0000 C CNN
+	1    9050 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 3800 10750 3800
+Wire Wire Line
+	10750 3800 10750 4050
+$Comp
+L GNDPWR #PWR06
+U 1 1 5642A212
+P 10750 4050
+F 0 "#PWR06" H 10750 3850 50  0001 C CNN
+F 1 "GNDPWR" H 10750 3920 50  0000 C CNN
+F 2 "" H 10750 4000 60  0000 C CNN
+F 3 "" H 10750 4000 60  0000 C CNN
+	1    10750 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 5300 9100 5300
+Wire Wire Line
+	9300 5400 9100 5400
+NoConn ~ 9100 5400
+Text Label 9100 5300 2    60   ~ 0
+TELEM
+$Comp
+L CONN_01X01 P2
+U 1 1 5642A49E
+P 3500 4300
+F 0 "P2" H 3500 4400 50  0000 C CNN
+F 1 "CONN_01X01" V 3600 4300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x01" H 3500 4300 60  0001 C CNN
+F 3 "" H 3500 4300 60  0000 C CNN
+	1    3500 4300
+	0    -1   -1   0   
+$EndComp
+Text Label 3550 4600 0    60   ~ 0
+TELEM
+Wire Wire Line
+	3500 4500 3500 4600
+Wire Wire Line
+	3500 4600 3550 4600
+$EndSCHEMATC
