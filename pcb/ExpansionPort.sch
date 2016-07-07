@@ -326,7 +326,7 @@ F 3 "" H 7650 2600 60  0000 C CNN
 	1    7650 2650
 	1    0    0    -1  
 $EndComp
-Text Notes 7150 6950 0    157  ~ 0
+Text Notes 7300 7550 0    118  ~ 0
 Chickadee Expansion Port
 Text HLabel 4500 3500 0    60   Input ~ 0
 +5V
@@ -519,21 +519,21 @@ SDMMC1_CMD
 Text Label 6850 3200 0    60   ~ 0
 SDMMC1_CMD
 Text Label 3550 4100 0    60   ~ 0
-SPI4_NSS
+BOOT0
 Text Label 6850 4100 0    60   ~ 0
-SPI4_NSS
+BOOT0
 Text Label 3550 4200 0    60   ~ 0
-SPI4_SCK
+RESET
 Text Label 6850 4200 0    60   ~ 0
-SPI4_SCK
+RESET
 Text Label 3550 4300 0    60   ~ 0
-SPI4_MISO
+CAN_HI
 Text Label 6850 4300 0    60   ~ 0
-SPI4_MISO
+CAN_HI
 Text Label 3550 4400 0    60   ~ 0
-SPI4_MOSI
+CAN_LO
 Text Label 6850 4400 0    60   ~ 0
-SPI4_MOSI
+CAN_LO
 Text Label 3550 4500 0    60   ~ 0
 SPI3_NSS
 Text Label 6850 4500 0    60   ~ 0
@@ -636,4 +636,6 @@ Text Label 3550 1200 0    60   ~ 0
 BATT_DIV
 Wire Wire Line
 	3400 1200 3550 1200
+Text Notes 7050 7050 0    60   ~ 0
+Copyright 2016 Chickadee Tech LLC, <add attributions here>\n\nThis work is licensed under the Creative Commons Attribution 4.0 International License.\nTo view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/\nor send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 $EndSCHEMATC
